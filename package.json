@@ -1,18 +1,18 @@
 {
-  "name": "@arneson/react-native-rich-text-editor",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arneson/react-native-zss-rich-text-editor.git"
-  },
-  "version": "1.2.2",
-  "description": "React Native Wrapper for ZSSRichTextEditor",
-  "main": "index.js",
-  "license": "SEE LICENSE IN LICENSE",
-  "dependencies": {
-    "react-native-webview-bridge": "0.40.1"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": ">=0.31.0"
-  }
+    "name": "@arneson/react-native-rich-text-editor",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arneson/react-native-zss-rich-text-editor.git"
+    },
+    "version": "1.2.2",
+    "description": "React Native Wrapper for ZSSRichTextEditor",
+    "main": "index.js",
+    "license": "SEE LICENSE IN LICENSE",
+    "dependencies": {
+        "react-native-webview-bridge": "https://github.com/KXProducts/react-native-webview-bridge.git#8be3747ff8c95b4f16ca75bc786734095cd7b4b5"
+    },
+    "peerDependencies": {
+        "react": "*",
+        "react-native": ">=0.31.0"
+    }
 }
