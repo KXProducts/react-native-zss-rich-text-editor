@@ -214,7 +214,7 @@ export default class RichTextEditor extends Component {
         >
           <View style={styles.modal}>
             <View style={[styles.innerModal, {marginBottom: PlatformIOS ? this.state.keyboardHeight : 0}]}>
-              <Text style={styles.inputTitle}>Title</Text>
+              <Text style={styles.inputTitle}>Tekst</Text>
               <View style={styles.inputWrapper}>
                 <TextInput
                     style={styles.input}
@@ -262,7 +262,7 @@ export default class RichTextEditor extends Component {
             style={buttonPlatformStyle}
         >
           <Text style={[styles.button, {paddingRight: 10}]}>
-            {this._upperCaseButtonTextIfNeeded('Cancel')}
+            {this._upperCaseButtonTextIfNeeded('Avbryt')}
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -278,7 +278,7 @@ export default class RichTextEditor extends Component {
             style={buttonPlatformStyle}
         >
           <Text style={[styles.button, {opacity: insertUpdateDisabled ? 0.5 : 1}]}>
-            {this._upperCaseButtonTextIfNeeded(this._linkIsNew() ? 'Insert' : 'Update')}
+            {this._upperCaseButtonTextIfNeeded(this._linkIsNew() ? 'Sett inn' : 'Oppdater')}
           </Text>
         </TouchableOpacity>
       </View>
