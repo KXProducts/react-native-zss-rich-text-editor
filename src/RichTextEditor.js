@@ -95,7 +95,7 @@ export default class RichTextEditor extends Component {
     const {marginTop = 0, marginBottom = 0} = this.props.style;
     const spacing = marginTop + marginBottom + top + bottom;
 
-    const editorAvailableHeight = PlatformIOS ? Dimensions.get('window').height - (keyboardHeight * 2) - spacing : Dimensions.get('window').height - keyboardHeight - spacing;
+    const editorAvailableHeight = Dimensions.get('window').height - keyboardHeight - spacing;
     this.setEditorHeight(editorAvailableHeight);
   }
 
@@ -545,7 +545,7 @@ export default class RichTextEditor extends Component {
   }
 
   setPlatform() {
-    this._sendAction(actions.setPlatform, Platform.OS);
+    this._sendAction(actions.setPlatform, 'android');
   }
 
   async getTitleHtml() {
